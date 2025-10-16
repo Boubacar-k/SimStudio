@@ -1,0 +1,1238 @@
++===============================================+
+|   SIMULATION DÉTECTION D'ATTAQUE DDoS - DEVS  |
++===============================================+
+
++=================================================+
+|   SCÉNARIO 3: Attaque DDoS Massive (PANNE)      |
++=================================================+
+
+Serveur initialisé:
+  - Seuil surcharge: 10 req/s
+  - Seuil panne: 25 req/s
+  - Seuil blocage client: 3 req/s
+
+=== Système DDoS initialisé ===
+Clients légitimes: 1
+Bots: 15
+Total clients: 16
+================================
+
+▶ Démarrage de la simulation pour 50 secondes...
+
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] Requête reçue de Client_0 | Total: 1 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 2 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 3 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 4 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 5 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 6 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 7 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 8 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 9 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 10 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 11 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 12 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 13 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 14 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 15 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 16 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 17 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 18 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 19 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 20 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 21 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 22 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 23 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 24 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 25 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 26 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 27 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 28 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 29 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 30 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 31 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 32 req/s
+Client_2 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_2 | Total: 33 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 34 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 35 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 36 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 37 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 38 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 39 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 40 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 41 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 42 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 43 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 44 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 45 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 46 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 47 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 48 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 49 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 50 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 51 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 52 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 53 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 54 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 55 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 56 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 57 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 58 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 59 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 60 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 61 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 62 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 63 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 64 req/s
+Client_3 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_3 | Total: 65 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 66 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 67 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 68 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 69 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 70 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 71 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 72 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 73 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 74 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 75 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 76 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 77 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 78 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 79 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 80 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 81 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 82 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 83 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 84 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 85 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 86 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 87 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 88 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 89 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 90 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 91 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 92 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 93 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 94 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 95 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 96 req/s
+Client_4 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_4 | Total: 97 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 98 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 99 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 100 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 101 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 102 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 103 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 104 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 105 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 106 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 107 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 108 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 109 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 110 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 111 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 112 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 113 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 114 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 115 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 116 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 117 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 118 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 119 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 120 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 121 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 122 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 123 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 124 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 125 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 126 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 127 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 128 req/s
+Client_5 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_5 | Total: 129 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 130 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 131 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 132 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 133 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 134 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 135 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 136 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 137 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 138 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 139 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 140 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 141 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 142 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 143 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 144 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 145 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 146 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 147 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 148 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 149 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 150 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 151 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 152 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 153 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 154 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 155 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 156 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 157 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 158 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 159 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 160 req/s
+Client_6 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_6 | Total: 161 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 162 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 163 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 164 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 165 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 166 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 167 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 168 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 169 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 170 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 171 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 172 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 173 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 174 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 175 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 176 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 177 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 178 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 179 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 180 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 181 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 182 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 183 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 184 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 185 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 186 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 187 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 188 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 189 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 190 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 191 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 192 req/s
+Client_7 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_7 | Total: 193 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 194 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 195 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 196 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 197 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 198 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 199 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 200 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 201 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 202 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 203 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 204 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 205 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 206 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 207 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 208 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 209 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 210 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 211 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 212 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 213 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 214 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 215 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 216 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 217 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 218 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 219 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 220 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 221 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 222 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 223 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 224 req/s
+Client_8 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_8 | Total: 225 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 226 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 227 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 228 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 229 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 230 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 231 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 232 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 233 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 234 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 235 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 236 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 237 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 238 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 239 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 240 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 241 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 242 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 243 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 244 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 245 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 246 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 247 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 248 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 249 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 250 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 251 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 252 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 253 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 254 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 255 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 256 req/s
+Client_9 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_9 | Total: 257 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 258 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 259 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 260 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 261 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 262 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 263 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 264 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 265 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 266 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 267 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 268 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 269 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 270 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 271 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 272 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 273 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 274 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 275 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 276 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 277 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 278 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 279 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 280 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 281 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 282 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 283 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 284 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 285 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 286 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 287 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 288 req/s
+Client_10 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_10 | Total: 289 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 290 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 291 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 292 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 293 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 294 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 295 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 296 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 297 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 298 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 299 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 300 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 301 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 302 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 303 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 304 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 305 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 306 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 307 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 308 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 309 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 310 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 311 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 312 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 313 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 314 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 315 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 316 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 317 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 318 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 319 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 320 req/s
+Client_11 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_11 | Total: 321 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 322 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 323 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 324 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 325 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 326 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 327 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 328 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 329 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 330 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 331 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 332 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 333 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 334 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 335 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 336 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 337 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 338 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 339 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 340 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 341 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 342 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 343 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 344 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 345 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 346 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 347 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 348 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 349 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 350 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 351 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 352 req/s
+Client_12 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_12 | Total: 353 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 354 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 355 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 356 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 357 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 358 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 359 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 360 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 361 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 362 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 363 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 364 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 365 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 366 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 367 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 368 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 369 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 370 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 371 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 372 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 373 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 374 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 375 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 376 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 377 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 378 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 379 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 380 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 381 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 382 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 383 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 384 req/s
+Client_13 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_13 | Total: 385 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 386 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 387 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 388 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 389 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 390 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 391 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 392 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 393 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 394 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 395 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 396 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 397 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 398 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 399 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 400 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 401 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 402 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 403 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 404 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 405 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 406 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 407 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 408 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 409 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 410 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 411 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 412 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 413 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 414 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 415 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 416 req/s
+Client_14 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_14 | Total: 417 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 418 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 419 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 420 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 421 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 422 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 423 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 424 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 425 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 426 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 427 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 428 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 429 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 430 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 431 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 432 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 433 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 434 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 435 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 436 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 437 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 438 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 439 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 440 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 441 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 442 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 443 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 444 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 445 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 446 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 447 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 448 req/s
+Client_15 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_15 | Total: 449 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 450 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 451 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 452 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 453 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 454 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 455 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 456 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 457 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 458 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 459 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 460 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 461 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 462 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 463 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 464 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 465 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 466 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 467 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 468 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 469 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 470 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 471 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 472 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 473 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 474 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 475 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 476 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 477 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 478 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 479 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 480 req/s
+Client_16 (BOT) envoie une requête
+Client_1 BLOQUÉ par le serveur
+Client_2 BLOQUÉ par le serveur
+Client_3 BLOQUÉ par le serveur
+Client_4 BLOQUÉ par le serveur
+Client_5 BLOQUÉ par le serveur
+Client_6 BLOQUÉ par le serveur
+Client_7 BLOQUÉ par le serveur
+Client_8 BLOQUÉ par le serveur
+Client_9 BLOQUÉ par le serveur
+Client_10 BLOQUÉ par le serveur
+Client_11 BLOQUÉ par le serveur
+Client_12 BLOQUÉ par le serveur
+Client_13 BLOQUÉ par le serveur
+Client_14 BLOQUÉ par le serveur
+Client_15 BLOQUÉ par le serveur
+Client_16 BLOQUÉ par le serveur
+[SERVEUR] Blocage du Client_0 (trop de requêtes: 16/s)
+[SERVEUR] Blocage du Client_2 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_3 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_4 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_5 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_6 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_7 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_8 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_9 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_10 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_11 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_12 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_13 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_14 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_15 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_16 (trop de requêtes: 16/s)
+[SERVEUR] État: NORMAL | Requêtes/s: 480
+[SERVEUR] Passage en SURCHARGE!
+[SERVEUR] État: SURCHARGE | Requêtes/s: 0
+[SERVEUR] Retour à NORMAL
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+Client_1 débloqé, passe à INACTIF
+Client_2 débloqé, passe à INACTIF
+Client_3 débloqé, passe à INACTIF
+Client_4 débloqé, passe à INACTIF
+Client_5 débloqé, passe à INACTIF
+Client_6 débloqé, passe à INACTIF
+Client_7 débloqé, passe à INACTIF
+Client_8 débloqé, passe à INACTIF
+Client_9 débloqé, passe à INACTIF
+Client_10 débloqé, passe à INACTIF
+Client_11 débloqé, passe à INACTIF
+Client_12 débloqé, passe à INACTIF
+Client_13 débloqé, passe à INACTIF
+Client_14 débloqé, passe à INACTIF
+Client_15 débloqé, passe à INACTIF
+Client_16 débloqé, passe à INACTIF
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+
+✓ Simulation terminée (Scénario 3)
+
++===============================================+
+|   SIMULATION DÉTECTION D'ATTAQUE DDoS - DEVS  |
++===============================================+
+
++=================================================+
+|   SCÉNARIO 3: Attaque DDoS Massive (PANNE)      |
++=================================================+
+
+Serveur initialisé:
+  - Seuil surcharge: 10 req/s
+  - Seuil panne: 25 req/s
+  - Seuil blocage client: 3 req/s
+
+=== Système DDoS initialisé ===
+Clients légitimes: 1
+Bots: 15
+Total clients: 16
+================================
+
+▶ Démarrage de la simulation pour 50 secondes...
+
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] Requête reçue de Client_0 | Total: 1 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 2 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 3 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 4 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 5 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 6 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 7 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 8 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 9 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 10 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 11 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 12 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 13 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 14 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 15 req/s
+[SERVEUR] Requête reçue de Client_0 | Total: 16 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 17 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 18 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 19 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 20 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 21 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 22 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 23 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 24 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 25 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 26 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 27 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 28 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 29 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 30 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 31 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 32 req/s
+Client_2 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_2 | Total: 33 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 34 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 35 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 36 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 37 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 38 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 39 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 40 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 41 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 42 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 43 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 44 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 45 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 46 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 47 req/s
+[SERVEUR] Requête reçue de Client_2 | Total: 48 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 49 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 50 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 51 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 52 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 53 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 54 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 55 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 56 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 57 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 58 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 59 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 60 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 61 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 62 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 63 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 64 req/s
+Client_3 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_3 | Total: 65 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 66 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 67 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 68 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 69 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 70 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 71 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 72 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 73 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 74 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 75 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 76 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 77 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 78 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 79 req/s
+[SERVEUR] Requête reçue de Client_3 | Total: 80 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 81 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 82 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 83 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 84 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 85 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 86 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 87 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 88 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 89 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 90 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 91 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 92 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 93 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 94 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 95 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 96 req/s
+Client_4 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_4 | Total: 97 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 98 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 99 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 100 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 101 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 102 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 103 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 104 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 105 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 106 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 107 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 108 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 109 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 110 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 111 req/s
+[SERVEUR] Requête reçue de Client_4 | Total: 112 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 113 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 114 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 115 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 116 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 117 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 118 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 119 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 120 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 121 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 122 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 123 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 124 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 125 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 126 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 127 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 128 req/s
+Client_5 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_5 | Total: 129 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 130 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 131 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 132 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 133 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 134 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 135 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 136 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 137 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 138 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 139 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 140 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 141 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 142 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 143 req/s
+[SERVEUR] Requête reçue de Client_5 | Total: 144 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 145 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 146 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 147 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 148 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 149 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 150 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 151 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 152 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 153 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 154 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 155 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 156 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 157 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 158 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 159 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 160 req/s
+Client_6 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_6 | Total: 161 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 162 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 163 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 164 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 165 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 166 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 167 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 168 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 169 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 170 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 171 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 172 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 173 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 174 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 175 req/s
+[SERVEUR] Requête reçue de Client_6 | Total: 176 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 177 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 178 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 179 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 180 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 181 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 182 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 183 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 184 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 185 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 186 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 187 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 188 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 189 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 190 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 191 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 192 req/s
+Client_7 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_7 | Total: 193 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 194 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 195 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 196 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 197 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 198 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 199 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 200 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 201 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 202 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 203 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 204 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 205 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 206 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 207 req/s
+[SERVEUR] Requête reçue de Client_7 | Total: 208 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 209 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 210 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 211 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 212 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 213 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 214 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 215 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 216 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 217 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 218 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 219 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 220 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 221 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 222 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 223 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 224 req/s
+Client_8 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_8 | Total: 225 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 226 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 227 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 228 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 229 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 230 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 231 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 232 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 233 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 234 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 235 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 236 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 237 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 238 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 239 req/s
+[SERVEUR] Requête reçue de Client_8 | Total: 240 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 241 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 242 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 243 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 244 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 245 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 246 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 247 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 248 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 249 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 250 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 251 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 252 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 253 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 254 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 255 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 256 req/s
+Client_9 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_9 | Total: 257 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 258 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 259 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 260 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 261 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 262 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 263 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 264 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 265 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 266 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 267 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 268 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 269 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 270 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 271 req/s
+[SERVEUR] Requête reçue de Client_9 | Total: 272 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 273 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 274 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 275 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 276 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 277 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 278 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 279 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 280 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 281 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 282 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 283 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 284 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 285 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 286 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 287 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 288 req/s
+Client_10 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_10 | Total: 289 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 290 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 291 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 292 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 293 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 294 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 295 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 296 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 297 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 298 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 299 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 300 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 301 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 302 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 303 req/s
+[SERVEUR] Requête reçue de Client_10 | Total: 304 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 305 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 306 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 307 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 308 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 309 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 310 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 311 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 312 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 313 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 314 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 315 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 316 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 317 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 318 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 319 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 320 req/s
+Client_11 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_11 | Total: 321 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 322 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 323 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 324 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 325 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 326 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 327 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 328 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 329 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 330 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 331 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 332 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 333 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 334 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 335 req/s
+[SERVEUR] Requête reçue de Client_11 | Total: 336 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 337 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 338 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 339 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 340 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 341 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 342 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 343 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 344 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 345 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 346 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 347 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 348 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 349 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 350 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 351 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 352 req/s
+Client_12 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_12 | Total: 353 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 354 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 355 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 356 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 357 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 358 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 359 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 360 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 361 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 362 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 363 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 364 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 365 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 366 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 367 req/s
+[SERVEUR] Requête reçue de Client_12 | Total: 368 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 369 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 370 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 371 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 372 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 373 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 374 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 375 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 376 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 377 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 378 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 379 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 380 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 381 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 382 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 383 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 384 req/s
+Client_13 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_13 | Total: 385 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 386 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 387 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 388 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 389 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 390 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 391 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 392 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 393 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 394 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 395 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 396 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 397 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 398 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 399 req/s
+[SERVEUR] Requête reçue de Client_13 | Total: 400 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 401 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 402 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 403 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 404 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 405 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 406 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 407 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 408 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 409 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 410 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 411 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 412 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 413 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 414 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 415 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 416 req/s
+Client_14 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_14 | Total: 417 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 418 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 419 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 420 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 421 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 422 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 423 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 424 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 425 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 426 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 427 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 428 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 429 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 430 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 431 req/s
+[SERVEUR] Requête reçue de Client_14 | Total: 432 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 433 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 434 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 435 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 436 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 437 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 438 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 439 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 440 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 441 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 442 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 443 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 444 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 445 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 446 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 447 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 448 req/s
+Client_15 (BOT) envoie une requête
+[SERVEUR] Requête reçue de Client_15 | Total: 449 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 450 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 451 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 452 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 453 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 454 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 455 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 456 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 457 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 458 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 459 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 460 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 461 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 462 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 463 req/s
+[SERVEUR] Requête reçue de Client_15 | Total: 464 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 465 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 466 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 467 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 468 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 469 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 470 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 471 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 472 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 473 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 474 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 475 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 476 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 477 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 478 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 479 req/s
+[SERVEUR] Requête reçue de Client_16 | Total: 480 req/s
+Client_16 (BOT) envoie une requête
+Client_1 BLOQUÉ par le serveur
+Client_2 BLOQUÉ par le serveur
+Client_3 BLOQUÉ par le serveur
+Client_4 BLOQUÉ par le serveur
+Client_5 BLOQUÉ par le serveur
+Client_6 BLOQUÉ par le serveur
+Client_7 BLOQUÉ par le serveur
+Client_8 BLOQUÉ par le serveur
+Client_9 BLOQUÉ par le serveur
+Client_10 BLOQUÉ par le serveur
+Client_11 BLOQUÉ par le serveur
+Client_12 BLOQUÉ par le serveur
+Client_13 BLOQUÉ par le serveur
+Client_14 BLOQUÉ par le serveur
+Client_15 BLOQUÉ par le serveur
+Client_16 BLOQUÉ par le serveur
+[SERVEUR] Blocage du Client_0 (trop de requêtes: 16/s)
+[SERVEUR] Blocage du Client_2 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_3 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_4 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_5 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_6 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_7 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_8 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_9 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_10 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_11 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_12 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_13 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_14 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_15 (trop de requêtes: 32/s)
+[SERVEUR] Blocage du Client_16 (trop de requêtes: 16/s)
+[SERVEUR] État: NORMAL | Requêtes/s: 480
+[SERVEUR] Passage en SURCHARGE!
+[SERVEUR] État: SURCHARGE | Requêtes/s: 0
+[SERVEUR] Retour à NORMAL
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+Client_1 débloqé, passe à INACTIF
+Client_2 débloqé, passe à INACTIF
+Client_3 débloqé, passe à INACTIF
+Client_4 débloqé, passe à INACTIF
+Client_5 débloqé, passe à INACTIF
+Client_6 débloqé, passe à INACTIF
+Client_7 débloqé, passe à INACTIF
+Client_8 débloqé, passe à INACTIF
+Client_9 débloqé, passe à INACTIF
+Client_10 débloqé, passe à INACTIF
+Client_11 débloqé, passe à INACTIF
+Client_12 débloqé, passe à INACTIF
+Client_13 débloqé, passe à INACTIF
+Client_14 débloqé, passe à INACTIF
+Client_15 débloqé, passe à INACTIF
+Client_16 débloqé, passe à INACTIF
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+[SERVEUR] État: NORMAL | Requêtes/s: 0
+
+✓ Simulation terminée (Scénario 3)
+
