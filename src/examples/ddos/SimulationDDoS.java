@@ -23,6 +23,15 @@ public class SimulationDDoS {
 //        lancerScenario1();
 //         lancerScenario2();
          lancerScenario3();
+
+         System.out.println("\n+===============================================+");
+         System.out.println("|   ANALYSE DES RÉSULTATS AVEC OLLAMA            |");
+         System.out.println("+===============================================+\n");
+         fileGen.analyzeWithOllama();
+
+         System.out.println("\n+===============================================+");
+         System.out.println("|   ANALYSE TERMINE                              |");
+         System.out.println("+===============================================+\n");
     }
     
     public static void lancerScenario1() throws DEVS_Exception {
@@ -63,15 +72,15 @@ public class SimulationDDoS {
         
         root.init(0);
         
-        System.out.println("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        System.out.println("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
         
-        fileGen.appendLine("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        fileGen.appendLine("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
         
         root.run(dureeSimulation);
         
-        System.out.println("\n✓ Simulation terminée (Scénario 1)\n");
+        System.out.println("\n Simulation terminée (Scénario 1)\n");
         
-        fileGen.appendLine("\n✓ Simulation terminée (Scénario 1)\n");
+        fileGen.appendLine("\n Simulation terminée (Scénario 1)\n");
     }
     
 
@@ -110,14 +119,14 @@ public class SimulationDDoS {
         RootCoordinator root = new RootCoordinator(systeme.getSimulator());
         
         root.init(0);
-        System.out.println("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        System.out.println("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
         
-        fileGen.appendLine("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        fileGen.appendLine("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
         root.run(dureeSimulation);
         
-        System.out.println("\n✓ Simulation terminée (Scénario 2)\n");
+        System.out.println("\n Simulation terminée (Scénario 2)\n");
         
-        fileGen.appendLine("\n✓ Simulation terminée (Scénario 2)\n");
+        fileGen.appendLine("\n Simulation terminée (Scénario 2)\n");
     }
     
 
@@ -157,12 +166,12 @@ public class SimulationDDoS {
         RootCoordinator root = new RootCoordinator(systeme.getSimulator());
         
         root.init(0);
-        System.out.println("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
-        fileGen.appendLine("▶ Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        System.out.println("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
+        fileGen.appendLine("Démarrage de la simulation pour " + dureeSimulation + " secondes...\n");
         root.run(dureeSimulation);
         
-        System.out.println("\n✓ Simulation terminée (Scénario 3)\n");
-        fileGen.appendLine("\n✓ Simulation terminée (Scénario 3)\n");
+        System.out.println("\n Simulation terminée (Scénario 3)\n");
+        fileGen.appendLine("\n Simulation terminée (Scénario 3)\n");
     }
     
     public static void lancerScenarioPersonnalise(
@@ -200,11 +209,11 @@ public class SimulationDDoS {
         RootCoordinator root = new RootCoordinator(systeme.getSimulator());
         root.init(0);
         
-        System.out.println("▶ Démarrage de la simulation pour " + duree + " secondes...\n");
-        fileGen.appendLine("▶ Démarrage de la simulation pour " + duree + " secondes...\n");
+        System.out.println("Démarrage de la simulation pour " + duree + " secondes...\n");
+        fileGen.appendLine("Démarrage de la simulation pour " + duree + " secondes...\n");
         root.run(duree);
         
-        System.out.println("\n✓ Simulation terminée\n");
-        fileGen.appendLine("\n✓ Simulation terminée\n");
+        System.out.println("\n Simulation terminée\n");
+        fileGen.appendLine("\nSimulation terminée\n");
     }
 }
