@@ -1,0 +1,7 @@
+1. **Résumé des cas rencontrés durant la simulation :**
+
+- Lors de la première attaquante (Client_2), le serveur reçoit au total 30 requêtes par seconde, ce qui entraîne un blocage du client en raison d'un taux de requête trop élevé. Cela suggère que la limite maximale des clients est dépassée et nécessite une action immédiate pour atténuer l'attaque DDoS potentielle.
+
+- Lors des attaques répétées (Clients 5 à 14), le serveur reçoit de multiples requêtes, souvent en même temps que les clients normaux et bloqués ci-dessus, ce qui signale une éventuelle activité DDoS. L'augmentation du nombre de connexions simultanées augmente la pression sur les ressources système (comme le débit d'E/S) et pourrait causer des problèmes de performance ou même un échec complet en raison de la saturation systémique si elle n'est pas gérée correctement.
+
+- Lorsque l'état du serveur passe à \

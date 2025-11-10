@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimulationDDoS",
+            "request": "launch",
+            "mainClass": "Simstudio/examples.ddos2.SimulationDDoS",
+            "projectName": "Simstudio"
+        },
+        {
+            "type": "java",
             "name": "Attach",
             "request": "attach",
             "hostName": "localhost",

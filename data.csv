@@ -1,0 +1,179 @@
+-------------------------------------------------------------
+|   SIMULATION AVANCÉE DE DÉTECTION D'ATTAQUES DDoS - DEVS  |
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|   SCÉNARIO 1: Trafic Normal (Sans Attaque)                |
+-------------------------------------------------------------
+
+[WAF] Initialisé - Seuil: 5 req/s
+[FIREWALL] Initialisé avec règles par défaut
+[IDS/IPS] Initialisé - Seuil anomalie: 50.0
+-----------------------------------------------------
+ [SERVEUR] Initialisé 
+-----------------------------------------------------
+ Seuil surcharge:        20 req/s                   
+ Seuil panne:            50 req/s                   
+ Seuil blocage client:    3 req/s                   
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+        SYSTÈME DDoS INITIALISÉ                    
+-----------------------------------------------------
+ Clients légitimes:    5                         
+ Bots malveillants:    0                         
+ Type d'attaque:       LEGITIME                
+ Total clients:        5                         
+-----------------------------------------------------
+ Architecture de sécurité:                         
+  1. WAF (Web Application Firewall)                
+  2. Firewall réseau                               
+  3. IDS/IPS                                       
+  4. Serveur applicatif                            
+----------------------------------------------------
+
+[1762758868626] 192.168.119.34:443 -> CLIENT | Type: LEGITIME | Taille: 1098 bytes | Client: LÉGITIME_1
+[1762758868629] 192.168.22.254:443 -> CLIENT | Type: LEGITIME | Taille: 1238 bytes | Client: LÉGITIME_2
+[1762758868630] 192.168.224.114:443 -> CLIENT | Type: LEGITIME | Taille: 898 bytes | Client: LÉGITIME_3
+[1762758868632] 192.168.164.4:443 -> CLIENT | Type: LEGITIME | Taille: 363 bytes | Client: LÉGITIME_4
+[1762758868633] 192.168.87.139:443 -> CLIENT | Type: LEGITIME | Taille: 1019 bytes | Client: LÉGITIME_5
+[1762758868634] [WAF] AUTORISE: 192.168.87.139 | Client_5 | Type: LEGITIME | Taille: 1019
+[1762758868635] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868637] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868638] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868637] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868640] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868640] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868641] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 3 | Rejected: 0
+[1762758868642] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868642] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868642] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868643] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868643] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868644] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 6 | Rejected: 0
+[1762758868645] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868645] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868645] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868647] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868646] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868648] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 9 | Rejected: 0
+[1762758868648] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868649] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868648] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868649] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868649] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868650] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 12 | Rejected: 0
+[1762758868651] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868651] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868651] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868653] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868652] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868653] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 15 | Rejected: 0
+[1762758868654] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868655] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868654] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868656] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868655] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868657] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 18 | Rejected: 0
+[1762758868657] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868658] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868657] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868658] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868658] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868659] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 21 | Rejected: 0
+[1762758868660] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868661] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868660] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868662] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868661] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868663] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 24 | Rejected: 0
+[1762758868663] 192.168.119.34:443 -> CLIENT | Type: LEGITIME | Taille: 1321 bytes | Client: LÉGITIME_1
+[1762758868664] 192.168.22.254:443 -> CLIENT | Type: LEGITIME | Taille: 936 bytes | Client: LÉGITIME_2
+[1762758868666] 192.168.224.114:443 -> CLIENT | Type: LEGITIME | Taille: 898 bytes | Client: LÉGITIME_3
+[1762758868667] 192.168.164.4:443 -> CLIENT | Type: LEGITIME | Taille: 767 bytes | Client: LÉGITIME_4
+[1762758868668] 192.168.87.139:443 -> CLIENT | Type: LEGITIME | Taille: 312 bytes | Client: LÉGITIME_5
+[1762758868668] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868669] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868668] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868670] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868670] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868671] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 27 | Rejected: 0
+[1762758868672] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868672] [WAF] AUTORISE: 192.168.87.139 | Client_5 | Type: LEGITIME | Taille: 312
+[1762758868673] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868673] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868674] [SERVEUR] Status: NORMAL | Load: 2 req/s | Active Clients: 1 | Processed: 29 | Rejected: 0
+[1762758868674] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868675] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868674] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868676] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868676] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868677] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 32 | Rejected: 0
+[1762758868677] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868678] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868677] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868679] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868679] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868680] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 35 | Rejected: 0
+[1762758868681] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868681] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868680] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868682] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868682] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868683] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 38 | Rejected: 0
+[1762758868683] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868684] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868683] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868684] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868684] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868685] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 41 | Rejected: 0
+[1762758868686] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868687] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868686] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868687] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868687] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868688] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 44 | Rejected: 0
+[1762758868689] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868689] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868689] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868690] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868690] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868691] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 47 | Rejected: 0
+[1762758868691] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868694] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868691] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868696] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868696] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868697] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 50 | Rejected: 0
+[1762758868698] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 1 req/s | Client Rate: 1 req/s
+[1762758868699] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 2 req/s | Client Rate: 2 req/s
+[1762758868698] [IDS] ACTIVITE SUSPECTE : 192.168.87.139 | Client_5 | Score: 30.0 | Signature: No Signature Match | Type: LEGITIME
+[1762758868701] [SERVEUR] Request ACCEPTED: Client_5 | Current Load: 3 req/s | Client Rate: 3 req/s
+[1762758868701] [PARE-FEU] ACCEPTE: 192.168.87.139 | Client_5 | Type: LEGITIME
+[1762758868702] [SERVEUR] Status: NORMAL | Load: 3 req/s | Active Clients: 1 | Processed: 53 | Rejected: 0
+[1762758868704] 192.168.119.34:443 -> CLIENT | Type: LEGITIME | Taille: 1233 bytes | Client: LÉGITIME_1
+Démarrage de la simulation pour 30 secondes...
+
+
+-------------------------------------------------------------
+|              RAPPORT FINAL DU SERVEUR                      |
+-------------------------------------------------------------
+| État final:           NORMAL                              |
+| Requêtes totales:     53                                  |
+| Requêtes traitées:    53                                  |
+| Requêtes rejetées:    0                                   |
+| Taux de réussite:     100.0                           %|
+| Temps en surcharge:   0                              ms|
+| Temps en panne:       0                              ms|
+| Clients uniques:      1                                   |
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+| Simulation terminée: Scénario 1                                  |
+| Temps d'exécution réel: 80 ms                            |
+| Durée simulée: 30 secondes                               |
+------------------------------------------------------------
+
